@@ -12,7 +12,7 @@ export default function Home() {
         src={heroImg}
         alt="Image hero do dev controle"
         width={600}
-        className="max-w-sm md:max-w-xl"
+        className="max-w-sm md:max-w-md"
       />
     </main>
   );

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Header} from "@/components/header"; 
-import {Footer} from "@/components/footer"; 
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { AuthProvider } from "@/providers/auth";
 
 export const metadata: Metadata = {
   title: "Dev Controle",
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
