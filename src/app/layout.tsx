@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { AuthProvider } from "@/providers/auth";
 
 export const metadata: Metadata = {
-  title: "Dev Controle",
+  title: "SOS Tech",
   description: "Gerencie seus clientes",
 };
 
