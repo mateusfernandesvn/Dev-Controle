@@ -25,13 +25,13 @@ export function Header() {
         </Link>
 
         {status === "loading" && (
-          <button className="animate-spin">
+          <button type="button" className="animate-spin">
             <FiLoader size={26} />
           </button>
         )}
 
         {status === "unauthenticated" && (
-          <button onClick={handleLogin}>
+          <button type="button" onClick={handleLogin}>
             <FiLock size={26} />
           </button>
         )}
@@ -50,7 +50,7 @@ export function Header() {
               <FiUser size={24} color="#000" />
             </Link>
 
-            <button onClick={handleLogout}>
+            <button type="button" onClick={handleLogout}>
               <FiLogOut size={24} color="#000" />
             </button>
           </div>
